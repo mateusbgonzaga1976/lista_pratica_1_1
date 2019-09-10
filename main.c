@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <conio.h>
 
 int main()
 {
-    int B;
-    float A, resultado;
+    int ano, anoBissexto;
 
-        printf("Digite o valor da base:\n");
-        scanf("%d", &B);
-        printf("Digite o valor do indice:\n");
-        scanf("%f", &A);
-            resultado = sqrt(B);
-        printf("O resultado eh: %*1.7e10\n", resultado);
+    printf("Digite o ano a ser consultado: ");
+    scanf("%d", &ano);
+
+        anoBissexto =  ano % 2;
+
+    if (anoBissexto == 0){
+        printf("%d eh um Ano Bissexto\n", ano);
+    }
+    else{
+        printf("%d nao eh um Ano Bissexto\n", ano);
+    }
+
     system("pause");
     return 0;
 }
