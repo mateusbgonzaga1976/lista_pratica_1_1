@@ -9,12 +9,11 @@ int main()
     float A, resultado;
 
         printf("Digite o valor da base:\n");
-        scanf("%f", &A);
-        printf("Digite o valor do indice:\n");
         scanf("%d", &B);
-            resultado = pow(A, B);
+        printf("Digite o valor do indice:\n");
+        scanf("%f", &A);
+            resultado = sqrt(B);
         printf("O resultado eh: %*1.7e10\n", resultado);
-
     system("pause");
     return 0;
 }
