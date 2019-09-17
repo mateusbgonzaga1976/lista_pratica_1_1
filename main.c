@@ -3,9 +3,27 @@
 
 int main()
 {
-    printf("Mateus Gonzaga;\n");
-    int matricula = 1920027391;
-    printf ("matricula %2X\n",matricula,matricula);
+    int i, x;
+    int div = 0;
+
+    do{
+        printf("Digite um numero inteiro e positivo: ");
+        scanf("%d", &x);
+    }while (x <= 0);
+
+    for(i = 1; i <= x; i++){
+        if (x % i == 0){
+            div++;
+        }
+    }
+
+    if (div == 2){
+        printf("O numero %d e primo!\n", x);
+    }
+    else{
+        printf("O numero %d nao e primo!\n", x);
+    }
+
     system("pause");
     return 0;
 }
